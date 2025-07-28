@@ -1,7 +1,7 @@
 {{--@props([--}}
 {{--'tag', 'size'=>'base'--}}
 {{--])--}}
-@props(['tag', 'size' => 'base'])
+@props(['tag' =>null, 'size' => 'base'])
 
 
 @php
@@ -21,4 +21,7 @@
 @endphp
 
 {{--<a href="" class="{{$classes}} ">{{ $tag->name}}</a>--}}
-<a href="/tags/{{ strtolower($tag->name) }}" class="{{ $classes }}">{{ $tag->name }}</a>
+{{--<a href="/tags/{{ strtolower($tag->name) }}" class="{{ $classes }}">{{ $tag->name }}</a>--}}
+<a href="" class="{{$classes}}">
+    {{ $tag ? $tag->name : $slot }}
+</a>

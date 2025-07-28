@@ -1,4 +1,7 @@
 <x-layout>
+
+    {{dd($jobs->tags)}}
+
     <div class="space-y-10">
 
         <section class=" mt-4 text-center">
@@ -31,15 +34,15 @@
             <x-section-heading>Tags</x-section-heading>
             <div class="mt-6 space-x-1">
                 {{--                <x-tag size="small">Tiny Tag</x-tag>--}}
-                @foreach($tags as $tag)
+{{--                @foreach($tags as $tag)--}}
                     {{--                    Primera version--}}
                     {{--                    <x-tag>{{$tag->name}}</x-tag>--}}
                     {{--                Nueva forma--}}
-                    <x-tag :tag="$tag"/>
+{{--                    <x-tag :tag="$tag"/>--}}
 
                     {{--                    <x-tag :$tag/>--}}
 
-                @endforeach
+{{--                @endforeach--}}
 
                 @foreach($tags as $tag)
                     <x-tag :$tag />
