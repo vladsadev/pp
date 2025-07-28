@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use App\Models\Job;
 use App\Models\Tag;
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -22,7 +21,10 @@ class DatabaseSeeder extends Seeder
             'email' => 'pepe@pp.com',
         ]);
 
-        Job::factory(14)->create();
-        Tag::factory(5)->create();
+//        Job::factory(14)->create();
+//        Tag::factory(5)->create();
+
+        $this->call(JobSeeder::class);
+
     }
 }
