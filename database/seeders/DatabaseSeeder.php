@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Pepe',
             'email' => 'pepe@pp.com',
+            'password' => '1524780032'
         ]);
 
 //        Job::factory(14)->create();

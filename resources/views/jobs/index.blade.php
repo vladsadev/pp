@@ -1,15 +1,19 @@
 <x-layout>
     <div class="space-y-10">
-
         <section class=" mt-4 text-center">
             <h1 class="text-4xl font-bold">Let's find Your Next Job</h1>
 
-            <form action="" class="mt-8">
-                <input
-                    type="text"
-                    placeholder="Web Developer..."
-                    class="py-2 px-3 border border-white/20 rounded-xl bg-white/10 w-full max-w-2xl">
-            </form>
+            {{--            <form action="" class="mt-8">--}}
+            {{--                <input--}}
+            {{--                    type="text"--}}
+            {{--                    placeholder="Web Developer..."--}}
+            {{--                    class="py-2 px-3 border border-white/20 rounded-xl bg-white/10 w-full max-w-2xl">--}}
+            {{--            </form>--}}
+
+            <x-forms.form action="/search" class="mt-8">
+                <x-forms.input name="q" placeholder="Web Developer..."/>
+            </x-forms.form>
+
         </section>
 
         <section class="pt-6">

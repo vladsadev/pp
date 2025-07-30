@@ -25,5 +25,5 @@
 {{--    {{ $tag ? $tag->name : $slot }}--}}
 {{--</a>--}}
 
-<a href="#" class="{{$classes}}">{{$tag->name??''}}</a>
+<a href="/tags/{{$tag->name??''}}" class="{{$classes}}">{{$tag->name??''}}</a>
 {{--<a href="/tags/{{strtolower($tag->name)}}" class="{{$classes}}">{{$tag->name}}</a>--}}
